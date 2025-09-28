@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="second.css">
+   <script src="first2.js"></script>
+</head>
+<body class="background">
+  <div class="container ">
+   <div class="navbar bg-black  flex-box ">
+    <div class="bg-black"> 
+   <img class="logo invert" src="logo.svg " alt="logo"> 
+   </div>
+   <div id="home-background">
+    <img class="home-btn invert" src="home.svg" alt="home">
+  
+    
+   </div>
+   <div class="search-bar flex-box">
+    <img class="search-icon invert" src="search.svg" alt="">
+     <input class="navbar-writting" type="text" placeholder="What do you want to play">
+     <img class="bag-icon invert" src="bag.svg" alt="">
+   </div>
+   <div class="premium-button">
+   <button class="premium">Explore Premium</button>
+   </div>
+   <div class="install-app">
+    <button class="install bg-black">
+      <img src="download.svg" alt="download" class=" invert download">
+      <span id="install-write">Install App</span>
+    </button>
+   </div>
+   <div class="navbar-icons">
+     <img class="icon invert" src="bell.svg" alt="notification">
+     <img class="icon invert" src ="user.svg" alt="community">
+   </div>
+   <div class="user">
+    <button class="user-name">O</button>
+   </div>
+   </div> 
+   <div class="container-2 flex-box bg-black">
+   <div class="library bg-light-black border">
+    <div class="create-library" >
+      <h1 class="library-font">Your Library</h1>
+      <button class="create ">
+       <img class="plus invert" src="plus.svg" alt="plus">
+        <span class="create-font">Create</span>
+      </button>
+    </div>
+       <div class="create-playlist border">
+         <div class="create-play">
+         <h1 class="first-playlist">Create your first playlist</h1>
+         <h3 class="help-you">it's easy,we'll help you</h3>
+         <button class="playlist">
+           Create playlist
+         </button>
+
+         </div>
+
+       </div>
+        <div class="browse-prodcast border">
+          
+         <div class="create-play">
+         <h1 class="first-playlist">Let's find some prodcast to follow</h1>
+         <h3 class="help-you">We'll keep you updated on new episodes</h3>
+         <button class="playlist">
+           Browse prodcast
+         </button>
+
+         </div>
+         
+
+       </div>
+   
+   </div>
+   <div class="Spotify-playlist  border">
+     <div class="playlist-header ">  
+      <button class="all-btn">
+        All
+      </button>
+      <button class="btns">
+        music
+      </button>
+      <button class="btns">
+        prodcast
+      </button>
+   </div>
+   <div class="recommended">
+    <h1 class="recommended-font">Recommended for you</h1>
+   </div>
+  
+   <div class="scroll-container">
+  <button class="scroll-btn left" onclick="scrollToLeft()">&#8249;</button>
+   
+   <div id="cardsList" class="cards-list">
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67706f000000023ecf97d47f4c7d7d60d28bba" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67706f0000000203b72ae3caf435bd1f95fbd5" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67706f000000027ab97440d3f8a52d5e733dbf" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67616d00001e024718e2b124f79258be7bc452" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67616d00001e02a7e251b543c77a6ed356dfbe" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+     
+   
+   </div>
+   <button class="scroll-btn right" onclick="scrollToRight()">&#8250;</button>
+   </div>
+   <div class="scroll-container">
+  <button class="scroll-btn left" onclick="scrollToLeft()">&#8249;</button>
+   <div id="cardsList" class="cards-list">
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67616d00001e02a048415db06a5b6fa7ec4e1a" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67616d00001e02b0dd6a5cd1dec96c4119c262" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67616d00004851982320da137d0de34410df61" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67616d00001e024718e2b124f79258be7bc452" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+    <div class="cards border">
+      <img class="card" src="https://i.scdn.co/image/ab67706f000000023ecf97d47f4c7d7d60d28bba" alt="saiyaara">
+      <h4>Saiyaara (From "Saiyaara")</h4>
+      <p>Tanishk Bagchi,Faheem Abdullah,Arslan Nizami,Irshad Kamil</p>
+    </div>
+     </div>
+   <button class="scroll-btn right" onclick="scrollToRight()">&#8250;</button>
+   </div>
+   </div>
+     
+   
+   </div>
+  
+  
+
+
+
+  </div>
+  
+</body>
+</html>
+    
+   
+   

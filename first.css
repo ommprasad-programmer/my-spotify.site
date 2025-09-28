@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.border{
+     /* border: 2px solid red;  */
+     border-radius:6px ;
+}
+    
+.flex-box{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-black{
+    background-color: #000000;
+    color: white;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-light-black{
+    background-color: #121212;
+    color: white;
+}
